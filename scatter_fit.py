@@ -8,10 +8,10 @@ def func(x, A, B):
 
 
 plt.figure()
-data_x = [-0.201, -0.0585, 0.04844, 0.1345, 0.2063, 0.2679]
-data_y = [-0.1838, -0.1257, -0.06905, -0.01341, 0.02366, 0.05690]
-figure_lt = -0.2
-figure_rt = 0.3
+data_x = [5.196, 5.490, 6.879, 7.408, 8.214]
+data_y = [0.446, 0.544, 1.147, 1.347, 1.720]
+figure_lt = 0
+figure_rt = 10
 plt.scatter(data_x[:], data_y[:], 3, marker="x")
 
 fit_A, fit_B = optimize.curve_fit(func, data_x, data_y)[0]
